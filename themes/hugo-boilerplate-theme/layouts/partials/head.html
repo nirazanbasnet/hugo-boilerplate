@@ -1,0 +1,17 @@
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Hugo Boilerplate</title>
+
+    {{ hugo.Generator }}
+
+    {{ "<!-- Main Stylesheet --> " | safeHTML }}
+
+    {{- $stylesheet := resources.Get "css/app.css" | minify | fingerprint }}
+    {{- with $stylesheet }}
+    <link rel="stylesheet" href="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{ $.Scratch.Set "stylesheet" . }}
+    {{ end }}
+</head>

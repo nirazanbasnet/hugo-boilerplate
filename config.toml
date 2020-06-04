@@ -1,0 +1,18 @@
+baseURL = ""
+title= "Hugo Boilerplate Theme"
+theme= "hugo-boilerplate-theme"
+languageCode = "en-us"
+
+[params]
+  author = "Hugo Boilerplate Theme"
+  description = "️"
+  facebook = ""
+  og_image = ""
+  sitename = "Hugo Boilerplate Theme"
+  twitter = ""
+
+[languages]
+  [languages.en]
+  languageName = "English"
+  languageCode = "en-us"
+  weight = 1
