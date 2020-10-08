@@ -21,3 +21,5 @@ fields:
   config:
     maxSize: 64
   label: News Banner
+pages:
+- news/neomorphism-guide-for-figma.md
