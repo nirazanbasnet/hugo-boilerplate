@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: data/hero.json
+  label: Hero Data
+  create: all
+  match: "**/*"
+- type: directory
   path: news
   label: News
   create: all
