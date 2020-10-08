@@ -9,6 +9,8 @@ sections:
   label: News
   create: all
   match: "**/*"
+  templates:
+  - news-template
 - type: directory
   path: content
   label: Pages
